@@ -1,0 +1,49 @@
+
+.fs_Row{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .fs_Column{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .fs_darkMode {
+    background: #282c34;
+    color: yellow;
+  }
+  
+  .fs_darkMode_Alt {
+    background: grey;
+    color: papayawhip;
+}
+  .fs_fullWidth {
+      width: 100%;
+  }
+
+  .fs_fullHeight{
+      height: 100vh;
+  }
+.fs_Header{
+    justify-content: flex-start;
+    align-items: center;
+}
+.fs_leftAligned{
+    /* background: chartreuse; */
+    justify-content: center;
+}
+.fs_button_nav_header{
+    padding: 0.5em;
+    background: grey;
+    border: none;
+    height: 100%;
+    
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.fs_button_nav_header:hover{
+    background: #282c34;
+}
