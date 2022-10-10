@@ -4,7 +4,7 @@ import logo from '../../logo.svg';
 import Tab from './Tab';
 
 const tabs = [
-    {   name: "Welcome",  method: ()=>{ alert("Welcome to the site, i nav to the home page")} },
+    {   name: "Welcome", path: '/',  method: ()=>{ alert("Welcome to the site, i nav to the home page")} },
     {   name: "About Us",  method: ()=>{ alert("i nav to a page to tell you more about the site")} },
     {   name: "Inventory",  method: ()=>{ alert("I shall show you what we have in stock")} },
     {   name: "Contact",  method: ()=>{ alert("I will display contact info")} },
@@ -20,7 +20,7 @@ class Header extends Component {
                 </div>
                 <div  className="fs_Row">
                     {tabs.map((tab, i) => 
-                        <Tab key={`${tab.name}-${i}`} name={tab.name} action={tab.method} /> 
+                        <Tab path={tab.path} key={`${tab.name}-${i}`} name={tab.name} action={tab.method} /> 
                     )}
                 </div>
             </div>

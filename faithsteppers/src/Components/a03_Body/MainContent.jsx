@@ -1,13 +1,27 @@
 import React, { Component } from 'react';
 
-class MainContent extends Component {
-    render() {
+import {
+    Outlet,
+    useNavigation
+} from 'react-router-dom'
+
+const MainContent = () =>{
+    const navigation = useNavigation();
+    const searching = navigation.location && new URLSearchParams(navigation.location.search).has("q");
+
+    const render = () => {
+
         return (
-            <div>
-                Body
+            <div 
+                id="detail"
+                className={navigation.state === "loading" ? "loading" : ""}
+            >
+                <Outlet />
             </div>
         );
     }
+
+    return render();
 }
 
 export default MainContent;

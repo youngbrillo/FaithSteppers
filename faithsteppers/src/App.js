@@ -9,7 +9,7 @@ import {Header, SideBar, Content} from './Components'
 class App extends Component {
   render() {
     return (
-      <div className="fs_Column fs_darkMode fs_fullWidth" >
+      <div className="fs_Column fs_fullWidth" >
         <Header />
         <div  className="fs_Row fs_fullHeight" >
           <SideBar />
